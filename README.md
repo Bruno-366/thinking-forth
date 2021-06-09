@@ -1,4 +1,4 @@
-# Preface to the ANS Forth Edition
+# Preface to *Thinking Forth* the ANS Forth Edition
 
 The original 1984 *Thinking Forth* feels a bit dated  
 today. A lot happend with Forth in the last 20 years, since this  

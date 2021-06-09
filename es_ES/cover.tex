@@ -1,6 +1,7 @@
 %% Thinking Forth
 %% Copyright (C) 2004 Leo Brodie
 %% Initial transcription by Ed Beroset
+%% Translated into Spanish (es_ES) by Francisco Escobedo
 %% 
 %% test harness
 %% pdflatex harness
@@ -8,20 +9,18 @@
 \input{tfoptions}
 \input{pagecount}
 
-\documentclass[10pt,\tflang,dvips]{book}
+\documentclass[10pt,dvips]{book}
 
 \usepackage[OT1]{fontenc}
 \usepackage[latin1]{inputenc}
-\usepackage{cmbright}
 \usepackage{graphics}
-\usepackage{babel}
+\usepackage[\tflang,american]{babel}
 \usepackage{geometry}
 \usepackage{pst-all}
 \usepackage{pst-blur}
 \usepackage{pst-grad}
 \usepackage{fancyvrb}
 \usepackage[cmbtt]{bold-extra}
-\usepackage{cmbright}
 \usepackage[\tfoptions]{tf}
 
 %% Cover creation howto:
@@ -115,7 +114,7 @@ footskip=0pt}%
 \noindent\hspace{0.5in}%
 \ifspineup
 \Huge\bfseries\person{Leo Brodie}\hss\fi
-\HUGE\slshape\rboxto{THINKING FORTH}{THINKING FORTH\/\normalsize\,}
+\HUGE\slshape\rboxto{PENSANDO EN FORTH}{PENSANDO EN FORTH\/\normalsize\,}
 \ifspineup\else
     \hss\Huge\bfseries\ifthinker\else\black\fi\person{Leo Brodie}\white%
 \fi\hspace{0.5in}%
@@ -214,16 +213,16 @@ footskip=0pt}%
   \hbox{\hspace{\evenmargin}\twidth\oldpwidth\advance\twidth-2\evenmargin
   \begin{minipage}{\twidth}%
     \parindent\z@\hyphenpenalty 10000\ifthinker\raggedright\else\raggedleft\fi
-    {\THUGE\bfseries\slshape THINKING FORTH\\[1ex]}%
-    \Huge\raggedright A Language \\ and Philosophy \\ for Solving Problems
+    {\THUGE\bfseries\slshape PENSANDO EN FORTH\\[1ex]}%
+    \Huge\raggedright Un lenguaje \\ y filosofía \\ para resolver problemas
   \end{minipage}}
    \vfill
   \hbox{\hspace{\evenmargin}\twidth\oldpwidth\advance\twidth-2\evenmargin%
   \begin{minipage}{\twidth}%
-     \Large\noindent\ifthinker Includes interviews with \Forth{}'s inventor
-\person{Charles H. Moore} and other \Forth{} thinkers
-\else\raggedleft Includes interviews \\ with \Forth{}'s inventor \\
-\person{Charles H. Moore} \\ and other \Forth{} \\ thinkers\fi
+     \Large\noindent\ifthinker Incluye entrevistas con el inventor de \Forth{},
+\person{Charles H. Moore} y otros pensadores de \Forth{}
+\else\raggedleft Incluye entrevistas \\ con el inventor de \Forth{} \\
+\person{Charles H. Moore} \\ y otros pensadores{} \\ de and other \Forth{}\fi
   \end{minipage}}%
 \vspace{0.25in}%
 %% You can include a publisher logo here, like

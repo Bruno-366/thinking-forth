@@ -1,30 +1,22 @@
 # Makefile for Thinking Forth
 
-SHELL = bash
-
 SOURCES = thinking-forth.tex \
 	tfoptions.tex \
 	bio.tex copyright.tex quotation.tex tocpages.tex title.tex title2.tex \
 	preface.tex \
 	preface94.tex \
 	preface2004.tex \
-	preface-ans.tex \
 	chapter1.tex \
-	chapter2.tex \
-	chapter3.tex \
-	chapter4.tex \
-	chapter5.tex \
 	chapter6.tex \
-	chapter7.tex \
-	chapter8.tex \
 	epilog.tex appendixa.tex appendixb.tex appendixc.tex \
-	appendixd.tex appendixe.tex \
 	tf.sty lstforth.sty lstlocal.cfg \
 	fig1-1.tex fig1-3.tex fig1-4.tex fig1-6.tex \
 	fig7-7.tex fig7-8.tex fig7-9.tex \
 	backpage.tex cover.tex legalcode-by-nc-sa.tex \
 	autoscale eps2pdf \
 	head.eps leobrodie.jpg leobrodie.eps
+#	preface-ans.tex chapter2.tex chapter3.tex chapter4.tex chapter5.tex chapter7.tex chapter8.tex \
+#	appendixd.tex appendixe.tex \
 #	rodin_thinker.jpg rodin_thinker.eps
 
 ALL_SOURCES = $(SOURCES) Makefile
@@ -61,20 +53,16 @@ HEIGHT = 9.125in
 ISBN = 0-9764587-0-5
 
 # dummy price
-PRICE = 53500
-# USD 20 would be 52000
+PRICE = 90000
+# USD 20 would be 42000
 # For Lulu, the price consists of $4.53+pages*$0.02+1.2*royalty
 # or 2*($1.56+pages*$0.02+1.2*royalty) for the ISBN plus service.
 # pages rounded up to 4, last page empty.
 
 PRINTING = "Punchy Printing"
 OPTIONS = 6.14x9.21,2004,tip,tipno,leo,isbn
-LANG = american
-SIDES = twoside
+LANG = spanish
 LINKCOLOR = blue
-PDFOUT = /printer
-SCALING = 1
-FIGSCALE = 1
 # for a printed version, use
 #LINKCOLOR = black
 # BoD options:
@@ -88,8 +76,7 @@ CP = cp
 TAR = tar jcf
 MD = mkdir
 RD = rm -rf
-PS2PDF = ps2pdf13 -dPDFSETTINGS=$(PDFOUT) -dEmbedAllFonts=true
-
+PS2PDF = ps2pdf13 -dPDFSETTINGS=/printer -dEmbedAllFonts=true
 THUMBPDF = thumbpdf --mode=ps2pdf
 
 TOGETHER = 20 # how many pages you bind together - divide by 4
@@ -138,14 +125,6 @@ bookletter : thinking-forth.ps
 	$(PSLET) >tf-letter.ps
 	$(PS2PDF) tf-letter.ps tf-letter.pdf
 
-# kindle requires to change a lot of options, so call this with
-kindle :
-	$(MAKE) tf-kindle.pdf OPTIONS=kindle,2004,tip,tipno,leo,isbn,bnw 
-  =/ebook FIGSCALE=0.7 SCALING=0.8 SIDES=oneside
-
-tf-kindle.pdf	: thinking-forth.ps
-	$(PS2PDF) thinking-forth.ps tf-kindle.pdf
-
 #two pages on one A4/Letter page, for printing with Laser printer and
 #using an A4/Letter binding machine (print with long-edge
 2on1.ps: thinking-forth.ps
@@ -160,9 +139,6 @@ tfoptions.tex:	Makefile
 	echo "\def\linkcolor{$(LINKCOLOR)}" >>$@
 	echo "\def\printing{$(PRINTING)}" >>$@
 	echo "\def\tfversion{$(VERSION)}" >>$@
-	echo "\def\tscale{$(SCALING)}" >>$@
-	echo "\def\figscale{$(FIGSCALE)}" >>$@
-	echo "\def\tfsides{$(SIDES)}" >>$@
 
 %.pdf : %.ps
 	$(PS2PDF) $< $@
@@ -194,9 +170,9 @@ cover.dvi:	cover.tex backpage.tex isbn.eps tfoptions.tex pagecount.tex head.eps 
 # get bookland.py from http://www.cgpp.com/bookland/
 
 isbn.eps:	Makefile
-	-which bookland.py && bookland.py $(ISBN) $(PRICE) >$@
+	bookland.py $(ISBN) $(PRICE) >$@
 
-pagecount.tex:	tfoptions.tex thinking-forth.ps
+pagecount.tex:	tfoptions.tex
 	grep %%Pages: thinking-forth.ps | sed -e 's/%%Pages: \([0-9]*\)/\\def\\pagecount{\1}/g' | head -1 >$@
 
 thinking-forth.idx: $(SOURCES) $(PNGSOURCES:.png=.eps)
@@ -217,12 +193,6 @@ img%.pdf:	img%.eps
 	./eps2pdf $<
 
 fig%.pdf:	fig%.eps
-	./eps2pdf $<
-
-pointing%.pdf:	pointing%.eps
-	./eps2pdf $<
-
-logo%.pdf:	logo%.eps
 	./eps2pdf $<
 
 AUTOTRACE = autotrace --despeckle-level 8 --error-threshold 4

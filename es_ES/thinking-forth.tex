@@ -7,15 +7,15 @@
 
 \input{tfoptions}
 
-\documentclass[10pt,\tflang,dvips]{book}
+\documentclass[10pt,dvips]{book}
 \usepackage{pst-all}
 \usepackage{pst-blur}
 \usepackage{pst-grad}
 \usepackage[T1]{fontenc}
 \usepackage[latin1]{inputenc}
-\usepackage{graphicx}
+\usepackage{graphics}
 \usepackage{framed}
-\usepackage{babel}
+\usepackage[\tflang,american]{babel}
 \usepackage{fancyvrb}
 %\usepackage[0.21]{listings}
 \usepackage{longtable}
@@ -31,9 +31,7 @@
 
 %\usepackage{times}
 %\renewcommand{\poorbf}[1]{\textbf{#1}}
-\ifkindle
- \renewcommand*\familydefault{\sfdefault} 
-\fi
+
 %\lstloadlanguages{Forth}
 %\input{epsf}
 \usepackage{array}
@@ -54,35 +52,26 @@
 % section and subsection header style
 % caption style
 
-\hypersetup{%
-pdftitle = {Thinking Forth},
-pdfsubject = {A Language and Philosophy for Solving Problems},
-pdfauthor = {Leo Brodie},
-pdfkeywords = {Forth},
-}
+\layoutspanish
 
 \begin{document}
-\title{Thinking Forth\\
-\large A Language and Philosophy for Solving Problems}
-\author{Leo Brodie%
-\thanks{Includes interviews with \Forth{}'s inventor, Charles H. Moore,
-and other \Forth{} thinkers}
-\\ \small author of Starting \Forth{}}
-\date{1984}
 
 %% external title page is here
+
+\renewcommand {\shorthandsspanish}{}
+\selectlanguage{spanish}
 
 \ifofour
 \input{title}
 \input{copyright}
 \input{bio}
 \input{quotation}
-\input{preface-ans}
+%\input{preface-ans}
 \input{preface2004}
 \input{preface94}
 \input{preface}
 \input{tocpages}
-\setcounter{sectionlr}{9}
+\setcounter{sectionlr}{8}
 \else\ifeightyfour
 \input{title}
 \input{bio}
@@ -108,19 +97,19 @@ and other \Forth{} thinkers}
 \pagenumbering{arabic}
 \setcounter{page}{1}
 \input{chapter1}
-\input{chapter2}
-\input{chapter3}
-\input{chapter4}
-\input{chapter5}
-\input{chapter6}
-\input{chapter7}
-\input{chapter8}
+%\input{chapter2}
+%\input{chapter3}
+%\input{chapter4}
+%\input{chapter5}
+%\input{chapter6}
+%\input{chapter7}
+%\input{chapter8}
 \input{epilog}
 \input{appendixa}
 \input{appendixb}
 \input{appendixc}
-\input{appendixd}
-\input{appendixe}
+%\input{appendixd}
+%\input{appendixe}
 % Index
 \cleardoublepage
 \printindex

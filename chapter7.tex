@@ -248,10 +248,10 @@ in a hurry, it would probably be best to take the easy way out:
 
 \begin{Code}
 : [box] { x1 y1 x2 y2 -- }
-  x1 y1 x2 y1 line
-  x2 y1 x2 y2 line
-  x2 y2 x1 y2 line
-  x1 y2 x1 y1 line ;
+ï¿½ï¿½x1ï¿½y1ï¿½x2ï¿½y1ï¿½line
+ï¿½ï¿½x2ï¿½y1ï¿½x2ï¿½y2ï¿½line
+ï¿½ï¿½x2ï¿½y2ï¿½x1ï¿½y2ï¿½line
+ï¿½ï¿½x1ï¿½y2ï¿½x1ï¿½y1ï¿½lineï¿½;
 \end{Code}
 What we've done is create four named variables, one for each coordinate.
 The first thing \forth{[BOX]} does is fill these variables with the

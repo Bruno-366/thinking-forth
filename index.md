@@ -1,12 +1,12 @@
 # Thinking Forth Project
-This is a fork the homepage of the Thinking Forth project.
+This is a fork the homepage of the [Thinking Forth] project.
 
 Thinking Forth captures the philosophy of the language to show users how to write more readable, better maintainable applications. This project makes the book available in electronic form (LaTeX and PDF).
 
 The project has two milestones: the reprint and the 21st century version. The reprint is done, scroll down for the ongoing project.
 
 ## The Book
-Thinking Forth is a book about the philosophy of problem solving and programming style, applied to the unique programming language Forth. Published first in 1984, it could be among the timeless classics of computer books, such as Fred Brooks' The Mythical Man-Month and Donald Knuth's The Art of Computer Programming.
+Thinking Forth is a book about the philosophy of problem solving and programming style, applied to the unique programming language [Forth]. Published first in 1984, it could be among the timeless classics of computer books, such as Fred Brooks' _[The Mythical Man-Month]_ and Donald Knuth's _[The Art of Computer Programming]_.
 
 Many software engineering principles discussed here have been rediscovered in eXtreme Programming, including (re)factoring, modularity, bottom-up and incremental design. Here you'll find all of those and more - such as the value of analysis and design - described in Leo Brodie's down-to-earth, humorous style, with illustrations, code examples, practical real life applications, illustrative cartoons, and interviews with Forth's inventor, Charles H. Moore as well as other Forth thinkers.
 
@@ -17,7 +17,7 @@ So flip open the book, and read all about the philosophy of Forth, analysis, dec
 This book has been scanned, OCR'd, typeset in LaTeX, and brought back to print (and your monitor) by a collaborative effort under a Creative Commons license.
 
 ## Author
-[html]Leo Brodie wrote Thinking Forth in 1984. Since the book went out of print now the second time (due to FIG folding up - FIG did the reprint), he allowed to publish Thinking Forth as electronic book under a Creative Commons license (attribute, non-commercial, share-alike) [html].
+[html][Leo Brodie] wrote Thinking Forth in 1984. Since the book went out of print now the second time (due to FIG folding up - FIG did the reprint), he allowed to publish Thinking Forth as electronic book under a Creative Commons license (attribute, non-commercial, share-alike) [html].
 
 ## Download
 Release 1.0 is a reprint with typos fixed, and high-quality typesetting. The book is available as
@@ -29,7 +29,7 @@ Release 1.0 is a reprint with typos fixed, and high-quality typesetting. The boo
 - [tar-bz2]LaTeX Sources (1968k) This is a distribution for those who want to generate it themselves from source. The images are in embedded PostScript form, the pixel images are only in the CVS database. The "build yourself" package allows to use several options, like different paper sizes, color markup and such. Look down to the Resources section for more information.
 
 ## Paper version
-Release 1.0 also is available as printed book from "Punchy Publising" (Leo Brodie's single-book publishing company) through Amazon. The ISBN number is 0-9764587-0-5.
+Release 1.0 also is available as printed book from "Punchy Publising" (Leo Brodie's single-book publishing company) through [Amazon]. The ISBN number is 0-9764587-0-5.
 
 ## Adobe Reader tips
 If you read the PDF with Adobe Reader, change the following settings in the Edit -> Preferences -> General... dialog box to improve display quality:
@@ -67,3 +67,11 @@ If you want to just read Thinking Forth, you better download the PDF.
 
 - Font package: To generate a PDF that is readable with Acroread, we need the cm-super package. This is necessary, since we use several fonts that are not part of the usually installed set of Type1 fonts from Bluesky. You can get it from [zip]ftp://tug.ctan.org/tex-archive/fonts/ps-type1/cm-super.zip (64MB). You don't need that if you don't want to generate an Acroread-readable PDF (e.g. just for printing or using alternative viewers). Since we also use the OT1-encoded cmbtt fonts, I've created a Type1 fonts for that, too: [tar-gz]cmbtt-type1.tar.gz. I've also created an OCRB Type1 font for the ISBN number based on the ocrb9.mf that is part of the EAN package. It's sufficient to have Ghostscript know about that font in Fontmap.GS, ps2pdf will embed it.
 Created 21aug2004. Last modified: 26oct2011 by MailBernd PaysanPGP key
+
+
+[Thinking Forth]: http://www.amazon.com/exec/obidos/ASIN/0976458705
+[Amazon]: http://www.amazon.com/exec/obidos/ASIN/0976458705
+[Forth]: http://en.wikipedia.org/wiki/Forth_programming_language
+[The Mythical Man-Month]: http://www.amazon.com/exec/obidos/ASIN/0201835959
+[The Art of Computer Programming]: http://www.amazon.com/exec/obidos/ASIN/0201485419
+[Leo Brodie]: http://punchandbrodie.com/leo/

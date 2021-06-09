@@ -27,7 +27,7 @@ Brodie released the original under a Creative Commons license, this
 is now possible. This edition adds all the missing things from the  
 original:
 
-- Modify the example sources so that they run with ANS Forth systems.
-- Update coding style to current practice (lower case and such).
-- Add chapters about Forth and OOP, Forth debugging, and maintenance.
-- Interview Forth thinkers that didn't have a chance 20 years ago.
+- [x] Modify the example sources so that they run with ANS Forth systems.
+- [x] Update coding style to current practice (lower case and such).
+- [x] Add chapters about Forth and OOP, Forth debugging, and maintenance.
+- [x] Interview Forth thinkers that didn't have a chance 20 years ago.

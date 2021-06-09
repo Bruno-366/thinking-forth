@@ -41,15 +41,16 @@ When you cut&paste from Adobe Reader, some special characters (ligatures) like f
 ## Things to do: 21st Century
 The first step, the reprint, is now done. The open nature of the license however allows us to update the book to current 21th century practice, and to add the missing chapters. The plan so far consists of
 
-Modify the example sources so that they run with ANS Forth systems.
-Update coding style to current practice (lower case and such).
-Add chapters about Forth and OOP, Forth debugging, and maintenance.
-Interview Forth thinkers that didn't have a chance 20 years ago.
-Translate it to other (natural! ;-) languages.
+- [ ] Modify the example sources so that they run with ANS Forth systems.
+- [ ] Update coding style to current practice (lower case and such).
+- [ ] Add chapters about Forth and OOP, Forth debugging, and maintenance.
+- [ ] Interview Forth thinkers that didn't have a chance 20 years ago.
+- [ ] Translate it to other (natural! ;-) languages.
+
 A first [preprint] is available.
 
 ## Resources
-Most of the resources available now are for people who participate in the effort to make the printed Thinking Forth available as LaTeX sources. Developers need a [php]Sourceforge Account, if you have one, send your account name to Bernd Paysan <bernd.paysan@gmx.de>.
+Most of the resources available now are for people who participate in the effort to make the printed Thinking Forth available as LaTeX sources. Developers need a [Sourceforge Account], if you have one, send your account name to Bernd Paysan <bernd.paysan@gmx.de>.
 
 If you want to just read Thinking Forth, you better download the PDF.
 
@@ -61,18 +62,20 @@ If you want to just read Thinking Forth, you better download the PDF.
 
   <thinking-forth-development@lists.sourceforge.net>
   
-- Sourceforge Project Page
+- [Sourceforge Project Page]
 - CVS repository: Developers can exchange and version their work in progress here. To access it, under a Unix-like shell (or Cygwin on Windows), use:
 
       export CVS_RSH=ssh  
       cvs -z3 -d:ext:developername@thinking-forth.cvs.sourceforge.net:/cvsroot/thinking-forth co thinking-forth
   
-  Once you've checked out that directory, it's sufficient to do cvs update there to get more recent versions. cvs add filename adds a new file, and cvs ci checks modified (and added) files into the repository. More documentation can be found on the [html]CVS homepage.
+  Once you've checked out that directory, it's sufficient to do cvs update there to get more recent versions. cvs add filename adds a new file, and cvs ci checks modified (and added) files into the repository. More documentation can be found on the [CVS homepage].
 
-  If you like to, you can also use a GUI frontend like [html]WinCVS on Windows.
+  If you like to, you can also use a GUI frontend like [WinCVS] on Windows.
 
-- Font package: To generate a PDF that is readable with Acroread, we need the cm-super package. This is necessary, since we use several fonts that are not part of the usually installed set of Type1 fonts from Bluesky. You can get it from [zip]ftp://tug.ctan.org/tex-archive/fonts/ps-type1/cm-super.zip (64MB). You don't need that if you don't want to generate an Acroread-readable PDF (e.g. just for printing or using alternative viewers). Since we also use the OT1-encoded cmbtt fonts, I've created a Type1 fonts for that, too: [tar-gz]cmbtt-type1.tar.gz. I've also created an OCRB Type1 font for the ISBN number based on the ocrb9.mf that is part of the EAN package. It's sufficient to have Ghostscript know about that font in Fontmap.GS, ps2pdf will embed it.
-Created 21aug2004. Last modified: 26oct2011 by MailBernd PaysanPGP key
+- Font package: To generate a PDF that is readable with Acroread, we need the cm-super package. This is necessary, since we use several fonts that are not part of the usually installed set of Type1 fonts from Bluesky. You can get it from <ftp://tug.ctan.org/tex-archive/fonts/ps-type1/cm-super.zip> (64MB). You don't need that if you don't want to generate an Acroread-readable PDF (e.g. just for printing or using alternative viewers). Since we also use the OT1-encoded cmbtt fonts, I've created a Type1 fonts for that, too: <cmbtt-type1.tar.gz>. I've also created an OCRB Type1 font for the ISBN number based on the ocrb9.mf that is part of the EAN package. It's sufficient to have Ghostscript know about that font in Fontmap.GS, ps2pdf will embed it.
+
+Created 21 aug 2004.
+Last modified: 26 oct 2011 by Bernd Paysan | PGP key
 
 [homepage]: http://thinking-forth.sourceforge.net/
 [Thinking Forth]: http://www.amazon.com/exec/obidos/ASIN/0976458705
@@ -82,3 +85,7 @@ Created 21aug2004. Last modified: 26oct2011 by MailBernd PaysanPGP key
 [The Art of Computer Programming]: http://www.amazon.com/exec/obidos/ASIN/0201485419
 [Leo Brodie]: http://punchandbrodie.com/leo/
 [preprint]: http://thinking-forth.sourceforge.net/thinking-forth-ans.pdf
+[Sourceforge Account]: http://sourceforge.net/account/register.php
+[Sourceforge Project Page]: http://sourceforge.net/projects/thinking-forth/
+[CVS homepage]: https://www.cvshome.org/docs/
+[WinCVS]: http://www.wincvs.org/

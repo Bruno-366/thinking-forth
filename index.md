@@ -1,5 +1,5 @@
 # Thinking Forth Project
-This is a fork the homepage of the [Thinking Forth] project.
+This is a fork the [homepage] of the [Thinking Forth] project.
 
 Thinking Forth captures the philosophy of the language to show users how to write more readable, better maintainable applications. This project makes the book available in electronic form (LaTeX and PDF).
 
@@ -68,7 +68,7 @@ If you want to just read Thinking Forth, you better download the PDF.
 - Font package: To generate a PDF that is readable with Acroread, we need the cm-super package. This is necessary, since we use several fonts that are not part of the usually installed set of Type1 fonts from Bluesky. You can get it from [zip]ftp://tug.ctan.org/tex-archive/fonts/ps-type1/cm-super.zip (64MB). You don't need that if you don't want to generate an Acroread-readable PDF (e.g. just for printing or using alternative viewers). Since we also use the OT1-encoded cmbtt fonts, I've created a Type1 fonts for that, too: [tar-gz]cmbtt-type1.tar.gz. I've also created an OCRB Type1 font for the ISBN number based on the ocrb9.mf that is part of the EAN package. It's sufficient to have Ghostscript know about that font in Fontmap.GS, ps2pdf will embed it.
 Created 21aug2004. Last modified: 26oct2011 by MailBernd PaysanPGP key
 
-
+[homepage]: http://thinking-forth.sourceforge.net/
 [Thinking Forth]: http://www.amazon.com/exec/obidos/ASIN/0976458705
 [Amazon]: http://www.amazon.com/exec/obidos/ASIN/0976458705
 [Forth]: http://en.wikipedia.org/wiki/Forth_programming_language

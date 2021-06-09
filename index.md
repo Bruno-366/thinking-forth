@@ -22,11 +22,11 @@ This book has been scanned, OCR'd, typeset in LaTeX, and brought back to print (
 ## Download
 Release 1.0 is a reprint with typos fixed, and high-quality typesetting. The book is available as
 
-[pdf]Onscreen PDF (4M) This is a slightly colored PDF, which is more pleasent to read on screen.
-[pdf]Book PDF (5M) This is the black&white PDF that was used for the on-demand printing.
-[pdf]Kindle PDF This is a black&white PDF scaled down and adopted for Amazon's Kindle.
-[pdf]Cover (49k) This is the book cover.
-[tar-bz2]LaTeX Sources (1968k) This is a distribution for those who want to generate it themselves from source. The images are in embedded PostScript form, the pixel images are only in the CVS database. The "build yourself" package allows to use several options, like different paper sizes, color markup and such. Look down to the Resources section for more information.
+- [pdf]Onscreen PDF (4M) This is a slightly colored PDF, which is more pleasent to read on screen.
+- [pdf]Book PDF (5M) This is the black&white PDF that was used for the on-demand printing.
+- [pdf]Kindle PDF This is a black&white PDF scaled down and adopted for Amazon's Kindle.
+- [pdf]Cover (49k) This is the book cover.
+- [tar-bz2]LaTeX Sources (1968k) This is a distribution for those who want to generate it themselves from source. The images are in embedded PostScript form, the pixel images are only in the CVS database. The "build yourself" package allows to use several options, like different paper sizes, color markup and such. Look down to the Resources section for more information.
 
 ## Paper version
 Release 1.0 also is available as printed book from "Punchy Publising" (Leo Brodie's single-book publishing company) through Amazon. The ISBN number is 0-9764587-0-5.
@@ -53,17 +53,17 @@ Most of the resources available now are for people who participate in the effort
 
 If you want to just read Thinking Forth, you better download the PDF.
 
-Announce Mailing list, you should not post to the mailing list address, since it's for announcements ([net]thinking-forth-announce@lists.sourceforge.net).
-Internal Developer Mailing list, after subscribing, post to [net]thinking-forth-development@lists.sourceforge.net
-[html]Sourceforge Project Page
-CVS repository: Developers can exchange and version their work in progress here. To access it, under a Unix-like shell (or Cygwin on Windows), use:
+- Announce Mailing list, you should not post to the mailing list address, since it's for announcements ([net]thinking-forth-announce@lists.sourceforge.net).
+- Internal Developer Mailing list, after subscribing, post to [net]thinking-forth-development@lists.sourceforge.net
+- [html]Sourceforge Project Page
+- CVS repository: Developers can exchange and version their work in progress here. To access it, under a Unix-like shell (or Cygwin on Windows), use:
 
-    export CVS_RSH=ssh  
-    cvs -z3 -d:ext:developername@thinking-forth.cvs.sourceforge.net:/cvsroot/thinking-forth co thinking-forth
+      export CVS_RSH=ssh  
+      cvs -z3 -d:ext:developername@thinking-forth.cvs.sourceforge.net:/cvsroot/thinking-forth co thinking-forth
   
-Once you've checked out that directory, it's sufficient to do cvs update there to get more recent versions. cvs add filename adds a new file, and cvs ci checks modified (and added) files into the repository. More documentation can be found on the [html]CVS homepage.
+  Once you've checked out that directory, it's sufficient to do cvs update there to get more recent versions. cvs add filename adds a new file, and cvs ci checks modified (and added) files into the repository. More documentation can be found on the [html]CVS homepage.
 
-If you like to, you can also use a GUI frontend like [html]WinCVS on Windows.
+  If you like to, you can also use a GUI frontend like [html]WinCVS on Windows.
 
-Font package: To generate a PDF that is readable with Acroread, we need the cm-super package. This is necessary, since we use several fonts that are not part of the usually installed set of Type1 fonts from Bluesky. You can get it from [zip]ftp://tug.ctan.org/tex-archive/fonts/ps-type1/cm-super.zip (64MB). You don't need that if you don't want to generate an Acroread-readable PDF (e.g. just for printing or using alternative viewers). Since we also use the OT1-encoded cmbtt fonts, I've created a Type1 fonts for that, too: [tar-gz]cmbtt-type1.tar.gz. I've also created an OCRB Type1 font for the ISBN number based on the ocrb9.mf that is part of the EAN package. It's sufficient to have Ghostscript know about that font in Fontmap.GS, ps2pdf will embed it.
+- Font package: To generate a PDF that is readable with Acroread, we need the cm-super package. This is necessary, since we use several fonts that are not part of the usually installed set of Type1 fonts from Bluesky. You can get it from [zip]ftp://tug.ctan.org/tex-archive/fonts/ps-type1/cm-super.zip (64MB). You don't need that if you don't want to generate an Acroread-readable PDF (e.g. just for printing or using alternative viewers). Since we also use the OT1-encoded cmbtt fonts, I've created a Type1 fonts for that, too: [tar-gz]cmbtt-type1.tar.gz. I've also created an OCRB Type1 font for the ISBN number based on the ocrb9.mf that is part of the EAN package. It's sufficient to have Ghostscript know about that font in Fontmap.GS, ps2pdf will embed it.
 Created 21aug2004. Last modified: 26oct2011 by MailBernd PaysanPGP key

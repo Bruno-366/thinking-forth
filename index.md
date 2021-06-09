@@ -46,16 +46,22 @@ Update coding style to current practice (lower case and such).
 Add chapters about Forth and OOP, Forth debugging, and maintenance.
 Interview Forth thinkers that didn't have a chance 20 years ago.
 Translate it to other (natural! ;-) languages.
-A first [pdf]preprint is available.
+A first [preprint] is available.
 
 ## Resources
-Most of the resources available now are for people who participate in the effort to make the printed Thinking Forth available as LaTeX sources. Developers need a [php]Sourceforge Account, if you have one, send your account name to me [de]Bernd Paysan <bernd.paysan@gmx.de>.
+Most of the resources available now are for people who participate in the effort to make the printed Thinking Forth available as LaTeX sources. Developers need a [php]Sourceforge Account, if you have one, send your account name to Bernd Paysan <bernd.paysan@gmx.de>.
 
 If you want to just read Thinking Forth, you better download the PDF.
 
-- Announce Mailing list, you should not post to the mailing list address, since it's for announcements ([net]thinking-forth-announce@lists.sourceforge.net).
-- Internal Developer Mailing list, after subscribing, post to [net]thinking-forth-development@lists.sourceforge.net
-- [html]Sourceforge Project Page
+- Announce Mailing list (you should not post to the mailing list address, since it's for announcement)s:
+
+  <thinking-forth-announce@lists.sourceforge.net>
+  
+- Internal Developer Mailing list, after subscribing, post to:
+
+  <thinking-forth-development@lists.sourceforge.net>
+  
+- Sourceforge Project Page
 - CVS repository: Developers can exchange and version their work in progress here. To access it, under a Unix-like shell (or Cygwin on Windows), use:
 
       export CVS_RSH=ssh  
@@ -75,3 +81,4 @@ Created 21aug2004. Last modified: 26oct2011 by MailBernd PaysanPGP key
 [The Mythical Man-Month]: http://www.amazon.com/exec/obidos/ASIN/0201835959
 [The Art of Computer Programming]: http://www.amazon.com/exec/obidos/ASIN/0201485419
 [Leo Brodie]: http://punchandbrodie.com/leo/
+[preprint]: http://thinking-forth.sourceforge.net/thinking-forth-ans.pdf

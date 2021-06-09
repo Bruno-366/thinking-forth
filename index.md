@@ -17,16 +17,16 @@ So flip open the book, and read all about the philosophy of Forth, analysis, dec
 This book has been scanned, OCR'd, typeset in LaTeX, and brought back to print (and your monitor) by a collaborative effort under a Creative Commons license.
 
 ## Author
-[html][Leo Brodie] wrote Thinking Forth in 1984. Since the book went out of print now the second time (due to FIG folding up - FIG did the reprint), he allowed to publish Thinking Forth as electronic book under a Creative Commons license (attribute, non-commercial, share-alike) [html].
+[Leo Brodie] wrote Thinking Forth in 1984. Since the book went out of print now the second time (due to FIG folding up - FIG did the reprint), he allowed to publish Thinking Forth as electronic book under a Creative Commons license (attribute, non-commercial, share-alike).
 
 ## Download
 Release 1.0 is a reprint with typos fixed, and high-quality typesetting. The book is available as
 
-- [pdf]Onscreen PDF (4M) This is a slightly colored PDF, which is more pleasent to read on screen.
-- [pdf]Book PDF (5M) This is the black&white PDF that was used for the on-demand printing.
-- [pdf]Kindle PDF This is a black&white PDF scaled down and adopted for Amazon's Kindle.
-- [pdf]Cover (49k) This is the book cover.
-- [tar-bz2]LaTeX Sources (1968k) This is a distribution for those who want to generate it themselves from source. The images are in embedded PostScript form, the pixel images are only in the CVS database. The "build yourself" package allows to use several options, like different paper sizes, color markup and such. Look down to the Resources section for more information.
+- PDF: Onscreen PDF (4M) This is a slightly colored PDF, which is more pleasent to read on screen.
+- PDF: Book PDF (5M) This is the black&white PDF that was used for the on-demand printing.
+- PDF: Kindle PDF This is a black&white PDF scaled down and adopted for Amazon's Kindle.
+- PDF: Cover (49k) This is the book cover.
+- tar-bz2: LaTeX Sources (1968k) This is a distribution for those who want to generate it themselves from source. The images are in embedded PostScript form, the pixel images are only in the CVS database. The "build yourself" package allows to use several options, like different paper sizes, color markup and such. Look down to the Resources section for more information.
 
 ## Paper version
 Release 1.0 also is available as printed book from "Punchy Publising" (Leo Brodie's single-book publishing company) through [Amazon]. The ISBN number is 0-9764587-0-5.

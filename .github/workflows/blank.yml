@@ -12,7 +12,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md
       - name: Run a multi-line script (texinfo)
         run: |
-          texi2any --html --pdf $GITHUB_WORKSPACE/en_US/appendixa.tex
+          sudo apt-get update
+          sudo apt-get latex2html
+          latex2html $GITHUB_WORKSPACE/en_US/appendixa.tex

@@ -1,0 +1,19 @@
+name: to-pdf
+
+on:
+  push:
+    branches: [ Bruno-366-folder ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Run a multi-line script (texinfo)
+        run: |
+          sudo apt-get update
+          sudo apt-get install latex2html
+          latex2html $GITHUB_WORKSPACE/en_US/appendixa.tex

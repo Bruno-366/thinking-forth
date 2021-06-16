@@ -15,5 +15,5 @@ jobs:
       - name: Run a multi-line script (texinfo)
         run: |
           sudo apt-get update
-          sudo apt-get latex2html
+          sudo apt-get install latex2html
           latex2html $GITHUB_WORKSPACE/en_US/appendixa.tex
